@@ -1,4 +1,5 @@
 "use client";
+// ALPHABOT------------>>>>>>>>>>>>
 import React, { useState } from 'react'
 import styles from '@/styles/RightSection.module.css'
 import chatgptlogo from '@/assets/chatgptlogo.png'
@@ -14,7 +15,7 @@ const RightSection = () => {
         {
             "role": "user",
             "parts": [{
-                "text": "This is Introductory dialogue for any prompt :  'Hello, my dear friend, I am the CHATGPT Bot. Ask me anything regarding procurement, purchase, and logistics. I will be happy to help you. '"
+                "text": "This is Introductory dialogue for any prompt :  'Hello, my dear friend, I am the ALPHABOT Bot. Ask me anything regarding procurement, purchase, and logistics. I will be happy to help you. '"
             }]
         },
         {
@@ -52,51 +53,9 @@ const RightSection = () => {
     const [isSent, setIsSent] = useState(true)
     const [allMessages, setAllMessages] = useState<any[]>([])
 
-    // const sendMessage = async () => {
-    //     // console.log(message)
-    //     let url = "https://api.openai.com/v1/chat/completions"
 
-    //     let token = `Bearer ${openAiAPI}`
-    //     let model = 'gpt-3.5-turbo'
 
-    //     let messagesToSend = [
-    //         ...allMessages,
-    //         {
-    //             role: 'user',
-    //             content: message
-    //         }
-    //     ]
-
-    //     let res = await fetch(url, {
-    //         method: 'POST',
-    //         headers: {
-    //             'Authorization': token,
-    //             'Content-Type': 'application/json'
-    //         },
-    //         body: JSON.stringify({
-    //             model: model,
-    //             messages: messagesToSend
-    //         })
-    //     })
-    //     let resjson = await res.json()
-    //     if (resjson) {
-    //         console.log(resjson)
-
-    //         // console.log(resjson.choices[0].message)
-
-    //         let newAllMessages = [
-    //             ...messagesToSend,
-    //             resjson.choices[0].message
-    //         ]
-
-    //         // console.log(newAllMessages)
-
-    //         setAllMessages(newAllMessages)
     //         setMessage('')
-    //     }
-    // }
-
-
 
     const sendMessage = async () => {
 
